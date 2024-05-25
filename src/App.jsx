@@ -5,6 +5,8 @@ import { Servicios } from "./components/Servicios";
 import { Sobre } from "./components/Sobre";
 import { Tecnologias } from "./components/Tecnologias";
 import { Footer } from "./components/Footer";
+import { ScrollToTopButton } from "./components/ScrollToTopButton";
+import { Loader } from "./components/Loader";
 
 export const App = () => {
   return (
@@ -16,6 +18,8 @@ export const App = () => {
       <Tecnologias />
       <Contacto />
       <Footer />
+      <ScrollToTopButton />
+      <Loader />
     </>
   )
 }

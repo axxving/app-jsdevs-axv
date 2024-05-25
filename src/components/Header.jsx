@@ -1,6 +1,14 @@
-import logo from '../assets/imgs/logo.png'
+import React from 'react';
+import logo from '../assets/imgs/logo.png';
 
 export const Header = () => {
+    const handleNavItemClick = () => {
+        const navbarCollapse = document.getElementById('navbarNav');
+        if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+        }
+    };
+
     return (
         <>
             <div className="container-fluid header">
@@ -15,26 +23,25 @@ export const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Inicio</a>
+                                    <a className="nav-link" href="#" onClick={handleNavItemClick}>Inicio</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#servicios">Servicios</a>
+                                    <a className="nav-link" href="#servicios" onClick={handleNavItemClick}>Servicios</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#sobre">Sobre</a>
+                                    <a className="nav-link" href="#sobre" onClick={handleNavItemClick}>Sobre</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#tecnologias">Tecnologias</a>
+                                    <a className="nav-link" href="#tecnologias" onClick={handleNavItemClick}>Tecnologias</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#contacto">Contacto</a>
+                                    <a className="nav-link" href="#contacto" onClick={handleNavItemClick}>Contacto</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
-
         </>
-    )
-}
+    );
+};
