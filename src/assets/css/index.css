@@ -86,7 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--crema);
+    background-color: var(--amarillo);
 }
 
 /* Sobre */
@@ -95,4 +95,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Tecnologias */
+.tecnologias {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--amarillo);
 }

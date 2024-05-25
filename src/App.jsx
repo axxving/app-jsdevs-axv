@@ -2,6 +2,7 @@ import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
 import { Servicios } from "./components/Servicios"
 import { Sobre } from "./components/Sobre"
+import { Tecnologias } from "./components/Tecnologias"
 
 export const App = () => {
   return (
@@ -10,6 +11,7 @@ export const App = () => {
       <Hero />
       <Servicios />
       <Sobre />
+      <Tecnologias />
     </>
   )
 }
