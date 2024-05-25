@@ -9,6 +9,10 @@
     margin-right: 10px;
 }
 
+.card {
+    border: none;
+}
+
 /* Header */
 .header {
     background-color: var(--negro);
@@ -74,4 +78,13 @@
 
 .bold {
     font-weight: bolder;
+}
+
+/*Servicios*/
+.servicios {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--crema);
 }
