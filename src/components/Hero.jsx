@@ -7,7 +7,7 @@ export const Hero = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 text-center text-lg-start">
-                            <span className="badge bg-warning mb-2">Desarrollo de Apps Web!</span>
+                            <span className="badge p-2 bg-warning-badge mb-3">Desarrollo de Apps Web!</span>
                             <h1 className="display-3 bold mt-2"> <span className='color-success'>Impulsa</span> tus ideas y <span className='color-warning'>proyectos</span> con J<span className='color-primary'>S</span>Devs</h1>
                             <p className="lead">Somos un equipo mexicano especializado en desarrollo web</p>
                             <p>Convertimos tus conceptos en soluciones digitales innovadoras, eficientes y a la medida de tus necesidades.</p>

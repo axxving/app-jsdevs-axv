@@ -21,10 +21,18 @@
 /*Predeterminados*/
 h1 {
     text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .btn {
     border-radius: 5px !important;
+    border: none;
 }
 
 .badge {
@@ -37,6 +45,8 @@ h1 {
 
 .card {
     border: none;
+    background-color: var(--negro);
+    color: var(--blanco);
 }
 
 .bold {
@@ -47,14 +57,14 @@ h1 {
 
 /*Colores de botones*/
 .btn-warning {
-    background-color: var(--amarillo) !important;
+    background-color: var(--crema) !important;
 
     &:hover {
-        background-color: var(--crema) !important;
+        background-color: var(--amarillo) !important;
     }
 
     &:active {
-        background-color: var(--amarillo) !important;
+        background-color: var(--crema) !important;
     }
 }
 
@@ -109,6 +119,18 @@ h1 {
 
 .color-white {
     color: var(--blanco) !important;
+}
+
+.bg-warning-badge {
+    background-color: var(--crema);
+    border: 2px solid var(--amarillo);
+    color: var(--gris);
+}
+
+.bg-success-badge {
+    background-color: var(--verde);
+    border: 2px solid var(--limon);
+    color: var(--blanco);
 }
 
 /* Header */
@@ -180,7 +202,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--amarillo);
+    background-color: var(--gris);
+    color: var(--blanco);
 }
 
 /* Sobre */
