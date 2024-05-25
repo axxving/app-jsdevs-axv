@@ -5,8 +5,17 @@
     --blanco: #FFFFFF;
 }
 
+.bi {
+    margin-right: 10px;
+}
+
+/* Header */
 .header {
     background-color: var(--negro);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-nav .nav-link:hover,
@@ -52,4 +61,17 @@
 
 .logo {
     width: 50px;
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--negro);
+}
+
+.bold {
+    font-weight: bolder;
 }
