@@ -88,3 +88,11 @@
     justify-content: center;
     background-color: var(--crema);
 }
+
+/* Sobre */
+.sobre {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
