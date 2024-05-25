@@ -1,0 +1,55 @@
+:root {
+    --negro: #242424;
+    --amarillo: #F5CA30;
+    --crema: #fad85e;
+    --blanco: #FFFFFF;
+}
+
+.header {
+    background-color: var(--negro);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active {
+    color: var(--blanco);
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link {
+    color: var(--blanco);
+}
+
+.nav-link {
+    color: var(--blanco) !important;
+
+    &:hover {
+        color: var(--amarillo) !important;
+    }
+
+    &:active {
+        color: var(--crema) !important;
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    color: transparent !important;
+    outline: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+}
+
+.logo {
+    width: 50px;
+}
