@@ -212,6 +212,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--negro);
+    color: var(--blanco);
 }
 
 /* Tecnologias */
@@ -220,5 +222,5 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--amarillo);
+    background-color: var(--verde);
 }
