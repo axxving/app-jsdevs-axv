@@ -1,8 +1,74 @@
 :root {
-    --negro: #242424;
-    --amarillo: #F5CA30;
-    --crema: #fad85e;
+    --negro: #202938;
+    --amarillo: #F7DD08;
+    --verde: #90D144;
     --blanco: #FFFFFF;
+    --azul: #39C8FC;
+
+    /*Claros*/
+    --gris: #293140;
+    --crema: #fad85e;
+    --limon: #73ac31;
+    --celeste: #5dcef7;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.btn {
+    border-radius: 5px !important;
+}
+
+.badge {
+    border-radius: 5px !important;
+}
+
+.btn-warning {
+    background-color: var(--amarillo);
+}
+
+.btn-success {
+    background-color: var(--verde) !important;
+    &:hover {
+        background-color: var(--limon) !important;
+    }
+    &:active {
+        background-color: var(--limon) !important;
+    }
+}
+
+.btn-dark {
+    background-color: var(--negro);
+}
+
+.bg-warning {
+    background-color: var(--amarillo) !important;
+    color: var(--negro);
+}
+
+.btn-primary {
+    background-color: var(--azul);
+}
+
+.color-success {
+    color: var(--verde);
+}
+
+.color-warning {
+    color: var(--amarillo);
+}
+
+.color-primary {
+    color: var(--azul);
+}
+
+.color-white {
+    color: var(--blanco);
 }
 
 .bi {
