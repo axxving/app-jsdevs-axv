@@ -3,7 +3,7 @@ import imgHero from '../assets/imgs/media/1.png';
 export const Hero = () => {
     return (
         <>
-            <div className="container-fluid hero text-light mt-5 py-5">
+            <div id='hero' className="container-fluid hero text-light mt-5 py-5">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 text-center text-lg-start">

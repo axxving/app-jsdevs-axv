@@ -7,7 +7,7 @@ export const Header = () => {
                 <div className="container">
                     <nav className="navbar navbar-expand-lg">
                         <a className="navbar-brand" href="#">
-                                <img className='logo' src={logo} alt="logo jsdevs" />
+                            <img className='logo' src={logo} alt="logo jsdevs" />
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -18,13 +18,16 @@ export const Header = () => {
                                     <a className="nav-link" href="#">Inicio</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Características</a>
+                                    <a className="nav-link" href="#servicios">Servicios</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Precios</a>
+                                    <a className="nav-link" href="#sobre">Sobre</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Contacto</a>
+                                    <a className="nav-link" href="#tecnologias">Tecnologias</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#contacto">Contacto</a>
                                 </li>
                             </ul>
                         </div>

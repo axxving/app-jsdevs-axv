@@ -2,7 +2,7 @@
 export const Servicios = () => {
     return (
         <>
-            <div className="container-fluid py-5 servicios">
+            <div id="servicios" className="container-fluid py-5 servicios">
                 <div className="container">
                     <div className="container-fluid py-5 servicios">
                         <div className="container">

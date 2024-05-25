@@ -1,7 +1,7 @@
 export const Sobre = () => {
     return (
         <>
-            <div className="container-fluid sobre py-5">
+            <div id="sobre" className="container-fluid sobre py-5">
                 <div className="container">
                     <div className="row text-center mb-5">
                         <div className="col">

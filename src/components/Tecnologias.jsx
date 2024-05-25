@@ -6,7 +6,7 @@ import IlustracionDos from "../assets/imgs/media/2.png";
 
 export const Tecnologias = () => {
     return (
-        <div className="container-fluid tecnologias py-5">
+        <div id="tecnologias" className="container-fluid tecnologias py-5">
             <div className="container">
                 <div className="row text-center mb-4">
                     <div className="col">

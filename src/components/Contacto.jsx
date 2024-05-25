@@ -1,6 +1,6 @@
 export const Contacto = () => {
     return (
-        <div className="container-fluid py-5 contacto">
+        <div id="contacto" className="container-fluid py-5 contacto">
             <div className="container">
                 <div className="row text-center mb-4">
                     <div className="col">
