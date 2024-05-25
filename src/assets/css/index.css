@@ -1,4 +1,5 @@
 :root {
+    /*Fuertes*/
     --negro: #202938;
     --amarillo: #F7DD08;
     --verde: #90D144;
@@ -12,10 +13,12 @@
     --celeste: #5dcef7;
 }
 
+/*Fuente*/
 * {
     font-family: sans-serif;
 }
 
+/*Predeterminados*/
 h1 {
     text-transform: uppercase;
 }
@@ -28,55 +31,84 @@ h1 {
     border-radius: 5px !important;
 }
 
-.btn-warning {
-    background-color: var(--amarillo);
-}
-
-.btn-success {
-    background-color: var(--verde) !important;
-    &:hover {
-        background-color: var(--limon) !important;
-    }
-    &:active {
-        background-color: var(--limon) !important;
-    }
-}
-
-.btn-dark {
-    background-color: var(--negro);
-}
-
-.bg-warning {
-    background-color: var(--amarillo) !important;
-    color: var(--negro);
-}
-
-.btn-primary {
-    background-color: var(--azul);
-}
-
-.color-success {
-    color: var(--verde);
-}
-
-.color-warning {
-    color: var(--amarillo);
-}
-
-.color-primary {
-    color: var(--azul);
-}
-
-.color-white {
-    color: var(--blanco);
-}
-
 .bi {
     margin-right: 10px;
 }
 
 .card {
     border: none;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+/*Seteados*/
+
+/*Colores de botones*/
+.btn-warning {
+    background-color: var(--amarillo) !important;
+
+    &:hover {
+        background-color: var(--crema) !important;
+    }
+
+    &:active {
+        background-color: var(--amarillo) !important;
+    }
+}
+
+.btn-success {
+    background-color: var(--verde) !important;
+
+    &:hover {
+        background-color: var(--limon) !important;
+    }
+
+    &:active {
+        background-color: var(--verde) !important;
+    }
+}
+
+.btn-dark {
+    background-color: var(--negro) !important;
+
+    &:hover {
+        background-color: var(--gris) !important;
+    }
+
+    &:active {
+        background-color: var(--negro) !important;
+    }
+}
+
+.btn-primary {
+    background-color: var(--azul) !important;
+
+    &:hover {
+        background-color: var(--celeste) !important;
+    }
+
+    &:active {
+        background-color: var(--azul) !important;
+    }
+}
+
+/*Color de letra*/
+.color-success {
+    color: var(--verde) !important;
+}
+
+.color-warning {
+    color: var(--amarillo) !important;
+}
+
+.color-primary {
+    color: var(--azul) !important;
+}
+
+.color-white {
+    color: var(--blanco) !important;
 }
 
 /* Header */
@@ -140,10 +172,6 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: var(--negro);
-}
-
-.bold {
-    font-weight: bolder;
 }
 
 /*Servicios*/
