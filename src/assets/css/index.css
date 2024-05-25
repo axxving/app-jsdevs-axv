@@ -226,10 +226,19 @@ h2 {
     color: var(--blanco);
 }
 
+/*Contacto*/
 .contacto {
     background-color: var(--negro);
     color: var(--blanco);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Footer*/
+.footer {
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
