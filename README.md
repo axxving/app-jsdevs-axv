@@ -1,4 +1,4 @@
-### Cómo Correr un Proyecto de React Hecho con Vite
+# Cómo Correr un Proyecto de React Hecho con Vite
 
 Este documento te guiará a través de los pasos necesarios para configurar y ejecutar un proyecto de React utilizando Vite.
 
