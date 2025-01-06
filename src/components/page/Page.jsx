@@ -13,6 +13,7 @@ import { CaseStudies } from './caseStudies/CaseStudies';
 import { Process } from './process/ProcessSection';
 import { FAQSection } from './faq/FAQSection';
 import { Blog } from './blog/Blog';
+import { Footer } from './footer/Footer';
 
 export const Page = () => {
     const stykeContainerHeader = {
@@ -39,6 +40,7 @@ export const Page = () => {
             <Process />
             <FAQSection />
             <Blog />
+            <Footer />
         </>
     );
 };
