@@ -5,6 +5,7 @@ import { HeaderContact } from './header/HeaderContact';
 import { About } from './about/About';
 import { CompanyNumbers } from './numbers/CompanyNumbers';
 import { Services } from './services/Services';
+import { Technologies } from './technologies/Technologies';
 
 export const Page = () => {
     const stykeContainerHeader = {
@@ -23,6 +24,7 @@ export const Page = () => {
             <About />
             <CompanyNumbers />
             <Services />
+            <Technologies />
         </>
     );
 };
