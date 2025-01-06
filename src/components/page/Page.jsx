@@ -9,6 +9,7 @@ import { Technologies } from './technologies/Technologies';
 import { Reasons } from './reasons/Reasons';
 import { Testimonials } from './testimonials/Testimonials';
 import { CallToAction } from './cta/CallToAction';
+import { CaseStudies } from './caseStudies/CaseStudies';
 
 export const Page = () => {
     const stykeContainerHeader = {
@@ -31,6 +32,7 @@ export const Page = () => {
             <Reasons />
             <Testimonials />
             <CallToAction />
+            <CaseStudies />
         </>
     );
 };
