@@ -2,6 +2,7 @@ import React from 'react';
 import { Hero } from './hero/Hero';
 import { Header } from './header/Header';
 import { HeaderContact } from './header/HeaderContact';
+import { About } from './about/About';
 
 export const Page = () => {
     const stykeContainerHeader = {
@@ -17,6 +18,7 @@ export const Page = () => {
                 <Header />
             </div>
             <Hero />
+            <About />
         </>
     );
 };

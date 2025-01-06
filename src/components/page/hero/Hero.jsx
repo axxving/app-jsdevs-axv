@@ -16,7 +16,7 @@ export const Hero = () => {
                 <div className="row">
                     <div className="col-md-8">
                         {/* Texto de bienvenida */}
-                        <p className="text-uppercase fw-bold mb-2">
+                        <p className="display-3 text-uppercase fw-bold mb-2">
                             Bienvenidos a WebDev Solutions
                         </p>
 
