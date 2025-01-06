@@ -54,7 +54,7 @@ export const Technologies = () => {
                         <h6 className="text-uppercase text-white-50 mb-3">
                             Tecnologías
                         </h6>
-                        <h2 className="display-4 fw-bold mb-4">
+                        <h2 className="fw-bold mb-4">
                             Herramientas que Usamos
                         </h2>
                         <p className="text-white-75">
