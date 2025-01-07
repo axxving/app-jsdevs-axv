@@ -1,4 +1,5 @@
 import React from 'react';
+import imgAbout from '../../../assets/img/img-about.png';
 
 export const About = () => {
     return (
@@ -9,20 +10,23 @@ export const About = () => {
             <div className="container">
                 <div className="row align-items-center">
                     {/* Imagen del lado izquierdo */}
-                    <div className="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                    <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
                         <img
-                            src="https://via.placeholder.com/600x600"
+                            src={imgAbout}
                             alt="Sobre nosotros"
                             className="img-fluid rounded"
                         />
                     </div>
 
                     {/* Contenido del lado derecho */}
-                    <div className="col-12 col-md-6 text-center text-md-start">
-                        <h5 className="text-uppercase text-primary mb-3">
+                    <div className="col-12 col-lg-6 text-start">
+                        <h5
+                            className="text-uppercase mb-3"
+                            style={{ color: '#33658A' }}
+                        >
                             Sobre Nosotros
                         </h5>
-                        <h2 className="display-3 fw-bold mb-4">
+                        <h2 className="display-4 fw-bold mb-4">
                             Tu Socio Estratégico <br /> en Desarrollo Digital
                         </h2>
                         <p className="text-muted mb-4">
@@ -34,8 +38,8 @@ export const About = () => {
                             alto impacto.
                         </p>
                         <div className="row">
-                            {/* Columna Vision */}
-                            <div className="col-sm-6 mb-4 mb-sm-0">
+                            {/* Columna Visión */}
+                            <div className="col-12 col-sm-6 mb-4">
                                 <h5 className="fw-bold">Nuestra Visión</h5>
                                 <ul className="list-unstyled text-muted">
                                     <li>
@@ -57,8 +61,8 @@ export const About = () => {
                                 </ul>
                             </div>
 
-                            {/* Columna Mission */}
-                            <div className="col-sm-6">
+                            {/* Columna Misión */}
+                            <div className="col-12 col-sm-6">
                                 <h5 className="fw-bold">Nuestra Misión</h5>
                                 <ul className="list-unstyled text-muted">
                                     <li>
@@ -82,12 +86,18 @@ export const About = () => {
                         </div>
 
                         {/* Botón */}
-                        <a
-                            href="#about"
-                            className="btn btn-primary btn-lg mt-4"
-                        >
-                            Conoce Más <i className="bi bi-arrow-right"></i>
-                        </a>
+                        <div className="d-grid d-md-block">
+                            <a
+                                href="#about"
+                                className="btn btn-lg mt-4"
+                                style={{
+                                    background: '#33658A',
+                                    color: '#ffffff',
+                                }}
+                            >
+                                Conoce Más <i className="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

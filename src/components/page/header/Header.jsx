@@ -8,7 +8,7 @@ export const Header = () => {
             <nav
                 className="navbar navbar-expand-md"
                 id="header"
-                style={{ background: '#071013' }}
+                style={{ background: '#33658A' }}
             >
                 <div className="container">
                     {/* Logo */}
