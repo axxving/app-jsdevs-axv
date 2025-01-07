@@ -1,7 +1,10 @@
 import React from 'react';
-import imgHero from '../../../assets/img/img-hero.jpg'
+import imgHero from '../../../assets/img/img-hero.jpg';
 
 export const Hero = () => {
+    const styleHero = {
+        fontFamily: '',
+    };
     return (
         <section
             className="hero-section text-white d-flex align-items-center"
@@ -17,7 +20,7 @@ export const Hero = () => {
                     <div className="col-md-8">
                         {/* Texto de bienvenida */}
                         <p className="display-3 text-uppercase fw-bold mb-2">
-                            Bienvenidos a WebDev Solutions
+                            Bienvenidos a JSDEVS Solutions
                         </p>
 
                         {/* Título principal */}
@@ -35,7 +38,10 @@ export const Hero = () => {
                         </p>
 
                         {/* Botón */}
-                        <a href="#discover" className="btn btn-primary btn-lg">
+                        <a
+                            href="#discover"
+                            className="btn btn-outline-light btn-lg"
+                        >
                             Descubre Más <i className="bi bi-arrow-right"></i>
                         </a>
                     </div>
