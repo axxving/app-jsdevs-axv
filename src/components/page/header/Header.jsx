@@ -5,13 +5,17 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 export const Header = () => {
     return (
         <header>
-            <nav className="navbar navbar-expand-md bg-primary" id="header">
+            <nav
+                className="navbar navbar-expand-md"
+                id="header"
+                style={{ background: '#071013' }}
+            >
                 <div className="container">
                     {/* Logo */}
                     <a className="navbar-brand text-white fw-bold" href="#">
-                        <span style={{ fontSize: '1.5rem' }}>Gaudit</span>
+                        <span style={{ fontSize: '1.5rem' }}>JSDEVS</span>
                         <br />
-                        <small className="text-white-50">ACCOUNTING FIRM</small>
+                        <small className="text-white-50">EN MERN STACK</small>
                     </a>
 
                     {/* Botón del menú hamburguesa */}
@@ -32,7 +36,7 @@ export const Header = () => {
                         <ul className="navbar-nav mx-auto text-center">
                             <li className="nav-item">
                                 <a className="nav-link text-white" href="#home">
-                                    Home
+                                    Inicio
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -40,7 +44,7 @@ export const Header = () => {
                                     className="nav-link text-white"
                                     href="#about"
                                 >
-                                    About Us
+                                    Nosotros
                                 </a>
                             </li>
                             <li className="nav-item dropdown">
@@ -52,7 +56,7 @@ export const Header = () => {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    Services
+                                    Servicios
                                 </a>
                                 <ul
                                     className="dropdown-menu text-dark"
@@ -60,12 +64,12 @@ export const Header = () => {
                                 >
                                     <li>
                                         <a className="dropdown-item" href="#">
-                                            Web Development
+                                            Desarrollo Web
                                         </a>
                                     </li>
                                     <li>
                                         <a className="dropdown-item" href="#">
-                                            SEO Optimization
+                                            Desarrollo Movil
                                         </a>
                                     </li>
                                 </ul>
@@ -75,7 +79,7 @@ export const Header = () => {
                                     className="nav-link text-white"
                                     href="#contact"
                                 >
-                                    Contact Us
+                                    Contacto
                                 </a>
                             </li>
                         </ul>
@@ -84,8 +88,10 @@ export const Header = () => {
                         <div className="d-none d-md-flex align-items-center text-white">
                             <i className="bi bi-telephone-fill fs-4 me-2"></i>
                             <div>
-                                <span className="d-block fw-bold">Call Us</span>
-                                <span>+123-234-1234</span>
+                                <span className="d-block fw-bold">
+                                    Llamanos
+                                </span>
+                                <span>+52-22-1129-5868</span>
                             </div>
                         </div>
                     </div>

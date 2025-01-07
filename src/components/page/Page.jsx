@@ -21,6 +21,7 @@ export const Page = () => {
         margun: '0',
         position: 'sticky',
         top: '0',
+        zIndex: '1000',
     };
     return (
         <>
