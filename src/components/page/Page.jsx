@@ -32,8 +32,8 @@ export const Page = () => {
             <Hero />
             <About />
             <CompanyNumbers />
-            {/* <Services />
-            <Technologies />
+            <Services />
+            {/* <Technologies />
             <Reasons />
             <Testimonials />
             <CallToAction />

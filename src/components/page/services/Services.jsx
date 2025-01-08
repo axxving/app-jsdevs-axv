@@ -9,10 +9,15 @@ export const Services = () => {
             <div className="container">
                 {/* Título y subtítulo */}
                 <div className="text-center mb-5">
-                    <h5 className="text-uppercase text-primary">
+                    <h5
+                        className="text-uppercase"
+                        style={{ color: '#33658A' }}
+                    >
                         Nuestros Servicios
                     </h5>
-                    <h2 className="fw-bold display-3">Servicios Profesionales para Ti</h2>
+                    <h2 className="fw-bold display-4">
+                        Servicios Profesionales para Ti
+                    </h2>
                     <p className="text-muted">
                         Ofrecemos soluciones personalizadas para satisfacer las
                         necesidades de tu negocio, garantizando calidad y
@@ -72,6 +77,7 @@ export const Services = () => {
                                     <div className="mb-3">
                                         <i
                                             className={`${service.icon} fs-1`}
+                                            style={{ color: '#33658A' }}
                                         ></i>
                                     </div>
                                     <h5 className="card-title fw-bold">
@@ -82,7 +88,8 @@ export const Services = () => {
                                     </p>
                                     <a
                                         href={service.href}
-                                        className="service-link text-primary text-decoration-none fw-bold"
+                                        className="service-link text-decoration-none fw-bold"
+                                        style={{ color: '#33658A' }}
                                     >
                                         Leer Más{' '}
                                         <i className="bi bi-arrow-right"></i>
@@ -100,7 +107,7 @@ export const Services = () => {
                     transition: all 0.3s ease;
                 }
                 .service-card:hover {
-                    background-color: #0d6efd; /* Azul Bootstrap */
+                    background-color: #33658a; /* Azul personalizado */
                     color: #fff; /* Texto blanco */
                     transform: translateY(-10px); /* Levantar la tarjeta */
                 }
