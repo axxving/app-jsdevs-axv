@@ -1,11 +1,12 @@
 import React from 'react';
+import imgBanner from '../../../assets/img/img-banner.png';
 
 export const CompanyNumbers = () => {
     return (
         <section
             className="company-numbers-section text-white py-5"
             style={{
-                backgroundImage: "url('https://via.placeholder.com/1920x600')", // Cambia la URL por una imagen relevante
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${imgBanner})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
@@ -18,7 +19,7 @@ export const CompanyNumbers = () => {
                     </div>
 
                     {/* Columna: Años de experiencia */}
-                    <div className="col-md-4">
+                    <div className="col-12 col-md-4 mb-4 mb-md-0">
                         <h1 className="display-4 fw-bold mb-2">
                             10 <sup>+</sup>
                         </h1>
@@ -26,7 +27,7 @@ export const CompanyNumbers = () => {
                     </div>
 
                     {/* Columna: Aplicaciones desarrolladas */}
-                    <div className="col-md-4">
+                    <div className="col-12 col-md-4 mb-4 mb-md-0">
                         <h1 className="display-4 fw-bold mb-2">
                             500 <sup>+</sup>
                         </h1>
@@ -34,7 +35,7 @@ export const CompanyNumbers = () => {
                     </div>
 
                     {/* Columna: Clientes satisfechos */}
-                    <div className="col-md-4">
+                    <div className="col-12 col-md-4">
                         <h1 className="display-4 fw-bold mb-2">
                             300 <sup>+</sup>
                         </h1>

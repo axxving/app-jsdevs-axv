@@ -32,7 +32,7 @@ export const Page = () => {
             <Hero />
             <About />
             <CompanyNumbers />
-            <Services />
+            {/* <Services />
             <Technologies />
             <Reasons />
             <Testimonials />
@@ -41,7 +41,7 @@ export const Page = () => {
             <Process />
             <FAQSection />
             <Blog />
-            <Footer />
+            <Footer /> */}
         </>
     );
 };
