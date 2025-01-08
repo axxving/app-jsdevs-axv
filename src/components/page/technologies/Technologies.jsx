@@ -3,69 +3,206 @@ import React from 'react';
 export const Technologies = () => {
     return (
         <section
-            className="technologies-section py-5 text-white bg-primary"
+            className="technologies-section py-5"
+            style={{ backgroundColor: '#33658A' }}
         >
             <div className="container">
                 <div className="row align-items-center">
+                    {/* Columna de texto */}
+                    <div className="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                        <h6 className="text-uppercase text-white-50 mb-3">
+                            Tecnologías
+                        </h6>
+                        <h2 className="fw-bold text-white mb-4">
+                            Herramientas que Usamos
+                        </h2>
+                        <p className="text-white">
+                            Aprovechamos lo mejor de las tecnologías modernas
+                            para entregar soluciones robustas, escalables y
+                            visualmente atractivas que garantizan un rendimiento
+                            óptimo.
+                        </p>
+                    </div>
+
                     {/* Columna de logotipos */}
                     <div className="col-md-8">
-                        <div className="row g-4 text-center text-md-start">
-                            {/* Logotipos de tecnologías */}
+                        <div className="row g-4 text-center">
+                            {/* Tarjetas de tecnologías */}
                             {[
                                 {
                                     name: 'Django',
-                                    logo: 'https://via.placeholder.com/150?text=Django',
+                                    icon: 'fab fa-python',
                                 },
                                 {
                                     name: 'React',
-                                    logo: 'https://via.placeholder.com/150?text=React',
+                                    icon: 'fab fa-react',
                                 },
                                 {
                                     name: 'Bootstrap',
-                                    logo: 'https://via.placeholder.com/150?text=Bootstrap',
+                                    icon: 'fab fa-bootstrap',
                                 },
                                 {
                                     name: 'PostgreSQL',
-                                    logo: 'https://via.placeholder.com/150?text=PostgreSQL',
+                                    icon: 'fas fa-database',
                                 },
                                 {
-                                    name: 'AWS',
-                                    logo: 'https://via.placeholder.com/150?text=AWS',
+                                    name: 'VPS',
+                                    icon: 'fas fa-server',
                                 },
                                 {
                                     name: 'Docker',
-                                    logo: 'https://via.placeholder.com/150?text=Docker',
+                                    icon: 'fab fa-docker',
                                 },
                             ].map((tech, index) => (
                                 <div className="col-6 col-md-4" key={index}>
-                                    <img
-                                        src={tech.logo}
-                                        alt={`${tech.name} Logo`}
-                                        className="img-fluid"
-                                    />
-                                    <p className="mt-2">{tech.name}</p>
+                                    <div
+                                        className="tech-card p-4 d-flex flex-column align-items-center justify-content-center rounded shadow-sm"
+                                        style={{
+                                            background:
+                                                'rgba(255, 255, 255, 0.1)',
+                                            backdropFilter: 'blur(8px)',
+                                            transition:
+                                                'transform 0.3s, box-shadow 0.3s',
+                                        }}
+                                    >
+                                        <i
+                                            className={`${tech.icon} fs-1 mb-3`}
+                                            style={{ color: '#FFFFFF' }}
+                                        ></i>
+                                        <h5
+                                            className="fw-bold text-white mb-0"
+                                            style={{
+                                                fontSize: '1rem',
+                                            }}
+                                        >
+                                            {tech.name}
+                                        </h5>
+                                    </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-
-                    {/* Columna de texto */}
-                    <div className="col-md-4 text-center text-md-start">
-                        <h6 className="text-uppercase text-white-50 mb-3">
-                            Tecnologías
-                        </h6>
-                        <h2 className="fw-bold mb-4">
-                            Herramientas que Usamos
-                        </h2>
-                        <p className="text-white-75">
-                            En nuestros proyectos empleamos tecnologías modernas
-                            y robustas que garantizan alto rendimiento,
-                            escalabilidad y una excelente experiencia para
-                            nuestros clientes.
-                        </p>
-                    </div>
                 </div>
             </div>
+
+            {/* Estilos adicionales */}
+            <style jsx>{`
+                .tech-card {
+                    transition: all 0.3s ease;
+                }
+                .tech-card:hover {
+                    background-color: #28527a; /* Azul más oscuro */
+                    color: #fff; /* Texto blanco */
+                    transform: translateY(-10px); /* Levantar la tarjeta */
+                }
+                .tech-card:hover i {
+                    color: #ffdd57; /* Color amarillo brillante */
+                }
+            `}</style>
         </section>
     );
 };
+
+// import React from 'react';
+
+// export const Technologies = () => {
+//     return (
+//         <section
+//             className="technologies-section py-5"
+//             style={{ backgroundColor: '#33658A' }}
+//         >
+//             <div className="container">
+//                 <div className="row align-items-center">
+//                     {/* Columna de texto */}
+//                     <div className="col-md-4 text-center text-md-start mb-4 mb-md-0">
+//                         <h6 className="text-uppercase text-white-50 mb-3">
+//                             Tecnologías
+//                         </h6>
+//                         <h2 className="fw-bold text-white mb-4">
+//                             Herramientas que Usamos
+//                         </h2>
+//                         <p className="text-white-75">
+//                             Aprovechamos lo mejor de las tecnologías modernas
+//                             para entregar soluciones robustas, escalables y
+//                             visualmente atractivas que garantizan un rendimiento
+//                             óptimo.
+//                         </p>
+//                     </div>
+
+//                     {/* Columna de logotipos */}
+//                     <div className="col-md-8">
+//                         <div className="row g-4 text-center">
+//                             {/* Tarjetas de tecnologías */}
+//                             {[
+//                                 {
+//                                     name: 'Django',
+//                                     icon: 'fab fa-python',
+//                                 },
+//                                 {
+//                                     name: 'React',
+//                                     icon: 'fab fa-react',
+//                                 },
+//                                 {
+//                                     name: 'Bootstrap',
+//                                     icon: 'fab fa-bootstrap',
+//                                 },
+//                                 {
+//                                     name: 'PostgreSQL',
+//                                     icon: 'fas fa-database',
+//                                 },
+//                                 {
+//                                     name: 'AWS',
+//                                     icon: 'fab fa-aws',
+//                                 },
+//                                 {
+//                                     name: 'Docker',
+//                                     icon: 'fab fa-docker',
+//                                 },
+//                             ].map((tech, index) => (
+//                                 <div className="col-6 col-md-4" key={index}>
+//                                     <div
+//                                         className="tech-card p-4 d-flex flex-column align-items-center justify-content-center rounded shadow-sm"
+//                                         style={{
+//                                             background: 'rgba(255, 255, 255, 0.1)',
+//                                             backdropFilter: 'blur(8px)',
+//                                             transition: 'transform 0.3s, box-shadow 0.3s',
+//                                         }}
+//                                     >
+//                                         <i
+//                                             className={`${tech.icon} fs-1 mb-3`}
+//                                             style={{ color: '#FFFFFF' }}
+//                                         ></i>
+//                                         <h5
+//                                             className="fw-bold text-white mb-0"
+//                                             style={{
+//                                                 fontSize: '1rem',
+//                                             }}
+//                                         >
+//                                             {tech.name}
+//                                         </h5>
+//                                     </div>
+//                                 </div>
+//                             ))}
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+
+//             {/* Estilos adicionales */}
+//             <style jsx>{`
+//                 .tech-card:hover {
+//                     transform: translateY(-10px);
+//                     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+//                 }
+
+//                 .tech-card i {
+//                     transition: color 0.3s;
+//                 }
+
+//                 .tech-card:hover i {
+//                     color: #ffdd57; /* Color amarillo brillante */
+//                 }
+//             `}</style>
+//         </section>
+//     );
+// };
