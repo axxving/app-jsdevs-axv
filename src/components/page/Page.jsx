@@ -39,8 +39,8 @@ export const Page = () => {
             <CallToAction />
             <CaseStudies />
             <Process />
-            {/* <FAQSection />
-            <Blog />
+            <FAQSection />
+            {/* <Blog />
             <Footer /> */}
         </>
     );

@@ -4,186 +4,124 @@ export const FAQSection = () => {
     return (
         <section
             className="py-5"
-            style={{ backgroundColor: '#007bff', color: 'white' }}
+            style={{
+                backgroundColor: '#33658A',
+                color: 'white',
+            }}
         >
             <div className="container">
                 <div className="row">
                     {/* Columna izquierda: Título y descripción */}
-                    <div className="col-md-6 mb-4 mb-md-0">
-                        <h5 className="text-uppercase">FAQ</h5>
-                        <h2 className="fw-bold">Las Preguntas Más Comunes</h2>
-                        <p className="text-white-50">
+                    <div className="col-md-5 mb-4 mb-md-0">
+                        <h5
+                            className="text-uppercase fw-bold mb-3"
+                            style={{
+                                letterSpacing: '1px',
+                                color: '#f6f7f8',
+                            }}
+                        >
+                            Preguntas Frecuentes
+                        </h5>
+                        <h2
+                            className="fw-bold mb-4"
+                            style={{ lineHeight: '1.3' }}
+                        >
+                            Todo lo que Necesitas Saber sobre Nuestro Servicio
+                        </h2>
+                        <p
+                            className="text-white-75"
+                            style={{
+                                fontSize: '1rem',
+                                lineHeight: '1.8',
+                            }}
+                        >
                             Encuentra las respuestas a las preguntas más comunes
                             relacionadas con el desarrollo de aplicaciones web y
-                            móviles. Si necesitas más información, no dudes en
-                            contactarnos.
+                            móviles. Si necesitas más información, ¡no dudes en
+                            contactarnos!
                         </p>
                     </div>
 
                     {/* Columna derecha: Acordeón de preguntas */}
-                    <div className="col-md-6">
+                    <div className="col-md-7">
                         <div className="accordion" id="faqAccordion">
-                            {/* Pregunta 1 */}
-                            <div className="accordion-item border">
-                                <h2
-                                    className="accordion-header"
-                                    id="headingOne"
-                                >
-                                    <button
-                                        className="accordion-button bg-light text-primary"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne"
-                                        aria-expanded="true"
-                                        aria-controls="collapseOne"
-                                    >
-                                        ¿Qué tecnologías usan para desarrollar
-                                        aplicaciones?
-                                    </button>
-                                </h2>
+                            {[
+                                {
+                                    id: 'collapseOne',
+                                    question:
+                                        '¿Qué tecnologías usan para desarrollar aplicaciones?',
+                                    answer: 'Utilizamos tecnologías como React, Django, Node.js y Flutter para garantizar soluciones escalables, rápidas y seguras.',
+                                },
+                                {
+                                    id: 'collapseTwo',
+                                    question:
+                                        '¿Pueden desarrollar una app para Android e iOS al mismo tiempo?',
+                                    answer: 'Sí, con frameworks como React Native o Flutter desarrollamos apps multiplataforma con un solo código base, reduciendo tiempo y costos.',
+                                },
+                                {
+                                    id: 'collapseThree',
+                                    question:
+                                        '¿Cuánto tiempo toma desarrollar una aplicación?',
+                                    answer: 'El tiempo depende de la complejidad. En general, tardamos de 2 a 6 meses desde la planificación hasta el lanzamiento.',
+                                },
+                                {
+                                    id: 'collapseFour',
+                                    question:
+                                        '¿Qué incluye el soporte post-lanzamiento?',
+                                    answer: 'Incluye mantenimiento, actualizaciones y soporte técnico continuo para asegurar el éxito de tu aplicación.',
+                                },
+                                {
+                                    id: 'collapseFive',
+                                    question:
+                                        '¿Pueden integrar mi app con otros sistemas?',
+                                    answer: 'Sí, podemos integrar tu aplicación con APIs externas, pasarelas de pago y otros sistemas personalizados.',
+                                },
+                            ].map((faq, index) => (
                                 <div
-                                    id="collapseOne"
-                                    className="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne"
-                                    data-bs-parent="#faqAccordion"
+                                    className="accordion-item mb-3"
+                                    key={index}
                                 >
-                                    <div className="accordion-body text-white bg-primary">
-                                        Utilizamos tecnologías como React,
-                                        Django, Node.js, y Flutter para
-                                        garantizar soluciones escalables,
-                                        rápidas y seguras.
+                                    <h2
+                                        className="accordion-header"
+                                        id={`heading${index + 1}`}
+                                    >
+                                        <button
+                                            className="accordion-button bg-white text-dark shadow-sm rounded"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target={`#${faq.id}`}
+                                            aria-expanded={index === 0}
+                                            aria-controls={faq.id}
+                                            style={{
+                                                fontSize: '1rem',
+                                                fontWeight: '500',
+                                                padding: '15px 20px',
+                                            }}
+                                        >
+                                            {faq.question}
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id={faq.id}
+                                        className={`accordion-collapse collapse ${
+                                            index === 0 ? 'show' : ''
+                                        }`}
+                                        aria-labelledby={`heading${index + 1}`}
+                                        data-bs-parent="#faqAccordion"
+                                    >
+                                        <div
+                                            className="accordion-body bg-light text-dark rounded"
+                                            style={{
+                                                padding: '20px',
+                                                fontSize: '0.95rem',
+                                                lineHeight: '1.7',
+                                            }}
+                                        >
+                                            {faq.answer}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            {/* Pregunta 2 */}
-                            <div className="accordion-item border">
-                                <h2
-                                    className="accordion-header"
-                                    id="headingTwo"
-                                >
-                                    <button
-                                        className="accordion-button collapsed bg-light text-primary"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo"
-                                        aria-expanded="false"
-                                        aria-controls="collapseTwo"
-                                    >
-                                        ¿Pueden desarrollar una app para Android
-                                        e iOS al mismo tiempo?
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseTwo"
-                                    className="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-bs-parent="#faqAccordion"
-                                >
-                                    <div className="accordion-body text-white bg-primary">
-                                        Sí, con frameworks como React Native o
-                                        Flutter desarrollamos apps
-                                        multiplataforma con un solo código base,
-                                        reduciendo tiempo y costos.
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Pregunta 3 */}
-                            <div className="accordion-item border">
-                                <h2
-                                    className="accordion-header"
-                                    id="headingThree"
-                                >
-                                    <button
-                                        className="accordion-button collapsed bg-light text-primary"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree"
-                                        aria-expanded="false"
-                                        aria-controls="collapseThree"
-                                    >
-                                        ¿Cuánto tiempo toma desarrollar una
-                                        aplicación?
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseThree"
-                                    className="accordion-collapse collapse"
-                                    aria-labelledby="headingThree"
-                                    data-bs-parent="#faqAccordion"
-                                >
-                                    <div className="accordion-body text-white bg-primary">
-                                        El tiempo depende de la complejidad. En
-                                        general, tardamos de 2 a 6 meses desde
-                                        la planificación hasta el lanzamiento.
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Pregunta 4 */}
-                            <div className="accordion-item border">
-                                <h2
-                                    className="accordion-header"
-                                    id="headingFour"
-                                >
-                                    <button
-                                        className="accordion-button collapsed bg-light text-primary"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour"
-                                        aria-expanded="false"
-                                        aria-controls="collapseFour"
-                                    >
-                                        ¿Qué incluye el soporte
-                                        post-lanzamiento?
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseFour"
-                                    className="accordion-collapse collapse"
-                                    aria-labelledby="headingFour"
-                                    data-bs-parent="#faqAccordion"
-                                >
-                                    <div className="accordion-body text-white bg-primary">
-                                        Incluye mantenimiento, actualizaciones,
-                                        y soporte técnico continuo para asegurar
-                                        el éxito de tu aplicación.
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Pregunta 5 */}
-                            <div className="accordion-item border">
-                                <h2
-                                    className="accordion-header"
-                                    id="headingFive"
-                                >
-                                    <button
-                                        className="accordion-button collapsed bg-light text-primary"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFive"
-                                        aria-expanded="false"
-                                        aria-controls="collapseFive"
-                                    >
-                                        ¿Pueden integrar mi app con otros
-                                        sistemas?
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseFive"
-                                    className="accordion-collapse collapse"
-                                    aria-labelledby="headingFive"
-                                    data-bs-parent="#faqAccordion"
-                                >
-                                    <div className="accordion-body text-white bg-primary">
-                                        Sí, podemos integrar tu aplicación con
-                                        APIs externas, pasarelas de pago, y
-                                        otros sistemas personalizados.
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
