@@ -40,7 +40,7 @@ export const Page = () => {
             <CaseStudies />
             <Process />
             <FAQSection />
-            {/* <Blog /> */}
+            <Blog />
             <Footer />
         </>
     );
