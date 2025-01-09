@@ -28,6 +28,10 @@ export const Testimonials = () => {
         ],
     };
 
+    const styleTestimonials = {
+        overflow: 'hidden',
+    };
+
     const testimonials = [
         {
             quote: '“Trabajar con esta empresa fue una experiencia increíble. Crearon nuestra app móvil en tiempo récord y con una calidad impresionante. ¡Altamente recomendados!”',
@@ -56,7 +60,7 @@ export const Testimonials = () => {
     ];
 
     return (
-        <section className="py-5">
+        <section className="py-5" style={styleTestimonials}>
             <div className="container">
                 <Slider {...settings}>
                     {testimonials.map((testimonial, index) => (
