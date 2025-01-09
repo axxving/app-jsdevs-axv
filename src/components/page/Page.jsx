@@ -35,8 +35,8 @@ export const Page = () => {
             <Services />
             <Technologies />
             <Reasons />
-            {/* <Testimonials />
-            <CallToAction />
+            <Testimonials />
+            {/* <CallToAction />
             <CaseStudies />
             <Process />
             <FAQSection />

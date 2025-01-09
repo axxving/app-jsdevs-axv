@@ -11,7 +11,7 @@ export const Testimonials = () => {
         slidesToShow: 3, // Cantidad de testimonios visibles
         slidesToScroll: 1, // Desplazarse uno por uno
         autoplay: true, // Activar autoplay
-        autoplaySpeed: 3000, // Tiempo entre cada desplazamiento automático (3 segundos)
+        autoplaySpeed: 3000, // Tiempo entre desplazamientos automáticos
         responsive: [
             {
                 breakpoint: 768,
@@ -56,7 +56,7 @@ export const Testimonials = () => {
     ];
 
     return (
-        <section className="py-5 bg-light">
+        <section className="py-5">
             <div className="container">
                 <Slider {...settings}>
                     {testimonials.map((testimonial, index) => (
@@ -64,12 +64,18 @@ export const Testimonials = () => {
                             <div
                                 className="card border-0 shadow-sm h-100"
                                 style={{
-                                    border: '1px solid #007bff',
-                                    borderRadius: '8px',
+                                    borderRadius: '16px',
+                                    backgroundColor: '#ffffff',
                                 }}
                             >
                                 <div className="card-body d-flex flex-column">
-                                    <p className="text-muted fst-italic mb-4">
+                                    <p
+                                        className="text-muted fst-italic mb-4"
+                                        style={{
+                                            fontSize: '0.95rem',
+                                            lineHeight: '1.6',
+                                        }}
+                                    >
                                         {testimonial.quote}
                                     </p>
                                     <div className="d-flex align-items-center mt-auto">
@@ -80,18 +86,31 @@ export const Testimonials = () => {
                                             style={{
                                                 width: '50px',
                                                 height: '50px',
+                                                objectFit: 'cover',
                                             }}
                                         />
                                         <div>
-                                            <h6 className="mb-0 fw-bold">
+                                            <h6
+                                                className="mb-0 fw-bold"
+                                                style={{ fontSize: '1rem' }}
+                                            >
                                                 {testimonial.name}
                                             </h6>
-                                            <p className="mb-0 text-primary">
+                                            <p
+                                                className="mb-0 text-primary"
+                                                style={{
+                                                    fontSize: '0.85rem',
+                                                    fontWeight: '500',
+                                                }}
+                                            >
                                                 {testimonial.role}
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="mt-3 text-end text-primary">
+                                    <div
+                                        className="mt-3 text-end text-primary"
+                                        style={{ fontSize: '1.5rem' }}
+                                    >
                                         <i className="bi bi-quote"></i>
                                     </div>
                                 </div>
