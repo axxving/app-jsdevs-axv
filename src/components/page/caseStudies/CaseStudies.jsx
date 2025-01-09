@@ -9,7 +9,7 @@ export const CaseStudies = () => {
                     <h5 className="text-uppercase" style={{ color: '#33658A' }}>
                         Proyectos Destacados
                     </h5>
-                    <h2 className="fw-bold">
+                    <h2 className="fw-bold display-4">
                         Últimos Proyectos que Hemos Realizado
                     </h2>
                     <p className="text-muted">

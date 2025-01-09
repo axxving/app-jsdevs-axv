@@ -38,8 +38,8 @@ export const Page = () => {
             {/* <Testimonials /> */}
             <CallToAction />
             <CaseStudies />
-            {/* <Process />
-            <FAQSection />
+            <Process />
+            {/* <FAQSection />
             <Blog />
             <Footer /> */}
         </>
