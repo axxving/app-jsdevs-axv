@@ -6,7 +6,7 @@ export const CaseStudies = () => {
             <div className="container">
                 {/* Título y subtítulo */}
                 <div className="text-center mb-5">
-                    <h5 className="text-uppercase text-primary">
+                    <h5 className="text-uppercase" style={{ color: '#33658A' }}>
                         Proyectos Destacados
                     </h5>
                     <h2 className="fw-bold">
@@ -46,9 +46,9 @@ export const CaseStudies = () => {
                     ].map((project, index) => (
                         <div className="col-md-4" key={index}>
                             <div
-                                className="card border-0 shadow-sm h-100"
+                                className="card border h-100"
                                 style={{
-                                    border: '1px solid #007bff',
+                                    border: '1px solid #33658A',
                                     borderRadius: '8px',
                                 }}
                             >
@@ -62,13 +62,25 @@ export const CaseStudies = () => {
                                     }}
                                 />
                                 <div className="card-body">
-                                    <h5 className="fw-bold">{project.title}</h5>
-                                    <p className="text-muted">
+                                    <h5
+                                        className="fw-bold mb-3"
+                                        style={{ color: '#33658A' }}
+                                    >
+                                        {project.title}
+                                    </h5>
+                                    <p
+                                        className="text-muted"
+                                        style={{
+                                            fontSize: '0.9rem',
+                                            lineHeight: '1.5',
+                                        }}
+                                    >
                                         {project.description}
                                     </p>
                                     <a
                                         href={project.link}
-                                        className="text-primary text-decoration-none fw-bold"
+                                        className="text-decoration-none fw-bold"
+                                        style={{ color: '#33658A' }}
                                     >
                                         Leer Más{' '}
                                         <i className="bi bi-arrow-right"></i>

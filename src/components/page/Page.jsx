@@ -35,10 +35,10 @@ export const Page = () => {
             <Services />
             <Technologies />
             <Reasons />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <CallToAction />
-            {/* <CaseStudies />
-            <Process />
+            <CaseStudies />
+            {/* <Process />
             <FAQSection />
             <Blog />
             <Footer /> */}
