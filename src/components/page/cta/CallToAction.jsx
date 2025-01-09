@@ -1,11 +1,12 @@
 import React from 'react';
+import imgCta from '../../../assets/img/img-cta.png';
 
 export const CallToAction = () => {
     return (
         <section
             className="call-to-action-section text-white d-flex align-items-center"
             style={{
-                backgroundImage: "url('https://via.placeholder.com/1920x600')", // Cambia esta URL por tu imagen de fondo
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${imgCta}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '50vh',
@@ -26,11 +27,21 @@ export const CallToAction = () => {
                 {/* Botón */}
                 <a
                     href="#contact"
-                    className="btn btn-primary btn-lg"
+                    className="btn btn-lg text-white"
                     style={{
-                        backgroundColor: '#007bff',
-                        border: 'none',
+                        backgroundColor: '#33658A',
+                        // border: 'none',
+                        // padding: '12px 30px',
+                        // borderRadius: '8px',
+                        // fontWeight: 'bold',
+                        // transition: 'all 0.3s ease',
                     }}
+                    // onMouseOver={e => {
+                    //     e.target.style.backgroundColor = '#28527A'; // Azul más oscuro en hover
+                    // }}
+                    // onMouseOut={e => {
+                    //     e.target.style.backgroundColor = '#33658A'; // Regresa al azul original
+                    // }}
                 >
                     Contáctanos Ahora <i className="bi bi-arrow-right"></i>
                 </a>
