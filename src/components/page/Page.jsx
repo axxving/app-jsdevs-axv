@@ -40,8 +40,8 @@ export const Page = () => {
             <CaseStudies />
             <Process />
             <FAQSection />
-            {/* <Blog />
-            <Footer /> */}
+            {/* <Blog /> */}
+            <Footer />
         </>
     );
 };
